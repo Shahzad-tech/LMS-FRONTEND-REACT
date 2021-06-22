@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Addmarks from './addmarks'
-import Viewmarks from './viewmarks'
-import Updatemarks from './updatemarks'
-import Deltemarks from './deletemarks'
+import Addmarks from '../src/components/addmarks'
+import Viewmarks from '../src/components/viewmarks'
+import Updatemarks from '../src/components/updatemarks'
+import Deltemarks from '../src/components/deletemarks'
 
 
 

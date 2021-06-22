@@ -4,7 +4,7 @@ import {Row,Col} from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import axios from 'axios';
 import Footer from './footer';
-import Logo from './logo.jpg'
+import Logo from '../logo.jpg'
 
 
 function Addmarks(){

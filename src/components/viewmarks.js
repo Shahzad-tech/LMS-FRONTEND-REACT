@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import {Row, Col, Table} from 'reactstrap';
 import axios from 'axios';
 import Footer from './footer';
-import Logo from './logo.jpg'
+import Logo from '../logo.jpg'
 
 
 function Viewmarks(){
