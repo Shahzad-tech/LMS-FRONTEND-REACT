@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Addmarks from './addmarks'
+import Viewmarks from './viewmarks'
+import Updatemarks from './updatemarks'
+import Deltemarks from './deletemarks'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Addmarks}></Route>
+        <Route path="/viewmarks" exact component={Viewmarks}></Route>
+        <Route path="/updatemarks" exact component={Updatemarks}></Route>
+        <Route path="/deletemarks" exact component={Deltemarks}></Route>
+      </Switch>
+    </Router>
+
   );
 }
 
